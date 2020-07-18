@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Implementation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="title">
+        <img src="img/stack.png" alt="title-img">
+        Stack</div>
+    
+    <div class="main-container">
+        <div class="data-container">
+            <div class="input-container">
+                <label for="stackSize">Enter the height of the stack: </label>
+                <input name="stackSize" type="text" id="stackSize" placeholder="Default 5 (if no value given)">
+                <button id="size-btn">Create Stack</button>
+            </div>
+            <div class="operations-container">
+                <label for="pushElement">Enter the element: </label><br>
+                <input name="stackSize" type="text" id="pushElement">
+                <button id="push">Push</button>
+                <button id="pop">Pop</button>
+            </div>
+        </div>
+        <div>
+            <div id="status">Create Stack</div>
+            <div class="stack-container" id="stack"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

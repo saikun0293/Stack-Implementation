@@ -1,0 +1,108 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Color palette */
+/* #2a363b */
+/* #e84a5f */
+/* #ff847c */
+/* #fecea8 */
+
+body{
+    background-color: #e84a5f;
+    font-family:"Montserrat";
+    font-weight:400;
+    margin:0;
+}
+
+.title img{
+    width:100px;
+    margin-left:20px;
+}
+
+.title{
+    font-size:60px;
+    display:flex;
+    align-items: center;
+    color:white;
+    background-color:#2a363b;
+    padding:20px;
+    border:2px solid white;
+}
+
+.main-container{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:20px;
+}
+
+.block{
+    width:100px;
+    height:100px;
+    background-color:#fecea8;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    border-radius:20px;
+    font-size:30px;
+    margin:0 auto;
+}
+
+.input-container,.operations-container{
+    width:350px;
+    padding:20px 15px;
+    line-height:3;
+    background-color: #ff847c;
+    border-radius:20px;
+    border:2px solid black;
+    height:100px;
+    margin:20px;
+}
+
+#stackSize,#pushElement{
+    border-radius: 20px;
+    border:none;
+    padding:10px;
+    font-size:10px;
+    width:50%;
+    font-family:"Montserrat"!important;
+    outline:none;
+}
+
+#size-btn,#push,#pop{
+    background-color:#2a363b;
+    border:none;
+    color:white;
+    font-family:"Montserrat"!important;
+    font-size:15px;
+    border-radius:20px;
+    padding:5px 7px;
+    margin-left:10px;
+    outline:none;
+}
+
+#size-btn:hover,#push:hover,#pop:hover{
+    background-color: white;
+    color:#2a363b;
+}
+
+#status{
+    width:300px;
+    font-weight:500;
+    background-color: #2a363b;
+    color:white;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+@media only screen and (max-width:780px){
+    .main-container{
+        flex-direction:column;
+    }
+
+    .input-container,.operations-container,#status{
+        margin:20px auto;
+    }
+}
