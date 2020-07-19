@@ -75,7 +75,6 @@ document.getElementById("pop").addEventListener("click",function(){
 document.getElementById("size-btn").addEventListener("click",function(){
     stack.innerHTML="";
     let length=document.getElementById("stackSize").value;
-    
     if(!isNaN(+length)){
         status.innerHTML="Push/Pop Items";
         stack1=new Stack(length);
