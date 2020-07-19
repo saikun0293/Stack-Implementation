@@ -74,10 +74,17 @@ document.getElementById("pop").addEventListener("click",function(){
 
 document.getElementById("size-btn").addEventListener("click",function(){
     stack.innerHTML="";
-    status.innerHTML="Push/Pop Items";
     let length=document.getElementById("stackSize").value;
-    stack1=new Stack(length);
+    
+    if(!isNaN(+length)){
+        status.innerHTML="Push/Pop Items";
+        stack1=new Stack(length);
+    }else{
+        status.innerHTML="Enter a valid number";
+    }
 })
+
+
 
 
 
